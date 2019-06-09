@@ -1,0 +1,127 @@
+[
+  {
+    "method": "OPTIONS",
+    "path": "/post",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/post",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/post",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PUT",
+    "path": "/post",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/post/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PUT",
+    "path": "/post/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/",
+    "name": "github.com/atymkiv/echo_frame_learning/blog/pkg/utl/server.healthCheck"
+  },
+  {
+    "method": "POST",
+    "path": "/login",
+    "name": "github.com/atymkiv/echo_frame_learning/blog/cmd/api/auth/transport.(*HTTP).(github.com/atymkiv/echo_frame_learning/blog/cmd/api/auth/transport.login)-fm"
+  },
+  {
+    "method": "TRACE",
+    "path": "/post/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "DELETE",
+    "path": "/post/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/post/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/post/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/post",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/post/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "HEAD",
+    "path": "/post",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/post",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "HEAD",
+    "path": "/post/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/post/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/signup",
+    "name": "github.com/atymkiv/echo_frame_learning/blog/cmd/api/user/transport.(*HTTP).(github.com/atymkiv/echo_frame_learning/blog/cmd/api/user/transport.signup)-fm"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/post",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/post/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/post/create",
+    "name": "github.com/atymkiv/echo_frame_learning/blog/cmd/api/post/transport.(*HTTP).(github.com/atymkiv/echo_frame_learning/blog/cmd/api/post/transport.create)-fm"
+  },
+  {
+    "method": "GET",
+    "path": "/post/feed",
+    "name": "github.com/atymkiv/echo_frame_learning/blog/cmd/api/post/transport.(*HTTP).(github.com/atymkiv/echo_frame_learning/blog/cmd/api/post/transport.feed)-fm"
+  },
+  {
+    "method": "DELETE",
+    "path": "/post",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "TRACE",
+    "path": "/post",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "Database": {
+    "Username": "root",
+    "Password": "example",
+    "Port": ":3306",
+    "Host": "mysql",
+    "Name": "blog"
+  },
+  "jwt": {
+    "secret": "Key",
+    "duration_minutes": 15,
+    "signing_algorithm": "HS256"
+  },
+  "application": {
+    "min_password_strength": 1
+  },
+  "server": {
+    "port": ":1234",
+    "debug": true,
+    "read_timeout_seconds": 10,
+    "write_timeout_seconds": 5
+  },
+  "nats": {
+    "qos": "message",
+    "host": "nats:4222"
+  },
+  "grpc": {
+    "host": "grpc:10001"
+  }
+}

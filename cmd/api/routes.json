@@ -1,0 +1,222 @@
+[
+  {
+    "method": "PUT",
+    "path": "/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/v1/users",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/v1/users",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PUT",
+    "path": "/v1/users",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/v1/users/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "TRACE",
+    "path": "/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/v1/users",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/v1/users",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "DELETE",
+    "path": "/v1/users/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/v1/users/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/v1/users/signup",
+    "name": "github.com/labstack/echo.static.func1"
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "DELETE",
+    "path": "/v1/users",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/v1/users",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/v1/users/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PUT",
+    "path": "/v1/users/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/v1/users/signed",
+    "name": "github.com/atymkiv/echo_frame_learning/blog/cmd/api/user/transport.(*HTTP).(github.com/atymkiv/echo_frame_learning/blog/cmd/api/user/transport.signup)-fm"
+  },
+  {
+    "method": "GET",
+    "path": "/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PUT",
+    "path": "/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "TRACE",
+    "path": "/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "TRACE",
+    "path": "/v1/users/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/v1/users/signup/*",
+    "name": "github.com/labstack/echo.static.func1"
+  },
+  {
+    "method": "DELETE",
+    "path": "/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "HEAD",
+    "path": "/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "DELETE",
+    "path": "/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "HEAD",
+    "path": "/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/v1/users",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "HEAD",
+    "path": "/v1/users/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/v1/users/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "CONNECT",
+    "path": "/v1/users/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PATCH",
+    "path": "/v1/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "TRACE",
+    "path": "/v1/users",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "GET",
+    "path": "/",
+    "name": "github.com/atymkiv/echo_frame_learning/blog/pkg/utl/server.healthCheck"
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "PROPFIND",
+    "path": "/v1",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "HEAD",
+    "path": "/v1/users",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  },
+  {
+    "method": "POST",
+    "path": "/v1/users/*",
+    "name": "github.com/labstack/echo.(*Group).Use.func1"
+  }
+]

@@ -1,0 +1,49 @@
+version: '3'
+services:
+  redis:
+    image: "redis:alpine"
+
+  nats:
+    image: "bitnami/nats:latest"
+
+  mysql:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+#  adminer:
+#      image: adminer
+#      restart: always
+#      ports:
+#        - 8080:8080
+
+  api:
+    depends_on:
+      - mysql
+      - nats
+    build:
+      context: ./
+      dockerfile: cmd/api/Dockerfile
+    ports:
+      - "1234:1234"
+
+
+  subscriber:
+    depends_on:
+      - nats
+    build:
+      context: ./
+      dockerfile: cmd/subscribers/Dockerfile
+    volumes:
+      - ./blog_data:/home
+  grpc:
+    depends_on:
+      - nats
+      - redis
+    ports:
+      - "10001:10001"
+    build:
+      context: ./
+      dockerfile: cmd/grpc/Dockerfile

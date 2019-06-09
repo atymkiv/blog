@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+
+package routeguide;
+
+// The database service definition
+service RouteGuide {
+
+    rpc CreatePost(Post) returns (Result){}
+
+}
+
+message Post{
+    string id = 1;
+    string from = 2;
+    string body = 3;
+}
+
+
+message Result {
+    int32 code = 1;
+}

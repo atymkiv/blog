@@ -1,0 +1,328 @@
+{
+  "swagger": "2.0",
+  "info": {},
+  "paths": {
+    "/login": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Logs in user by username and password.",
+        "operationId": "login",
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/credentials"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/loginResp"
+          },
+          "400": {
+            "$ref": "#/responses/errMsg"
+          },
+          "401": {
+            "$ref": "#/responses/errMsg"
+          },
+          "403": {
+            "$ref": "#/responses/err"
+          },
+          "404": {
+            "$ref": "#/responses/errMsg"
+          },
+          "500": {
+            "$ref": "#/responses/err"
+          }
+        }
+      }
+    },
+    "/post/create": {
+      "post": {
+        "tags": [
+          "posts"
+        ],
+        "summary": "Creates new post.",
+        "operationId": "postCreate",
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/createReq"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/postResp"
+          },
+          "400": {
+            "$ref": "#/responses/errMsg"
+          },
+          "401": {
+            "$ref": "#/responses/err"
+          },
+          "403": {
+            "$ref": "#/responses/errMsg"
+          },
+          "500": {
+            "$ref": "#/responses/err"
+          }
+        }
+      }
+    },
+    "/post/feed": {
+      "get": {
+        "tags": [
+          "posts"
+        ],
+        "summary": "Shows all posts.",
+        "operationId": "postsView",
+        "responses": {
+          "200": {
+            "$ref": "#/responses/postsResp"
+          },
+          "400": {
+            "$ref": "#/responses/errMsg"
+          },
+          "401": {
+            "$ref": "#/responses/err"
+          },
+          "403": {
+            "$ref": "#/responses/errMsg"
+          },
+          "500": {
+            "$ref": "#/responses/err"
+          }
+        }
+      }
+    },
+    "/signup": {
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Creates new user account.",
+        "operationId": "userCreate",
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/authReq"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/userResp"
+          },
+          "400": {
+            "$ref": "#/responses/errMsg"
+          },
+          "401": {
+            "$ref": "#/responses/err"
+          },
+          "403": {
+            "$ref": "#/responses/errMsg"
+          },
+          "500": {
+            "$ref": "#/responses/err"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Post": {
+      "type": "object",
+      "properties": {
+        "CreatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DeletedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ID": {
+          "type": "integer",
+          "format": "uint64"
+        },
+        "UpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "from": {
+          "type": "string",
+          "x-go-name": "From"
+        },
+        "message": {
+          "type": "string",
+          "x-go-name": "Message"
+        }
+      },
+      "x-go-package": "github.com/atymkiv/echo_frame_learning/blog/model"
+    },
+    "authReq": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "x-go-name": "Email"
+        },
+        "password": {
+          "type": "string",
+          "x-go-name": "Password"
+        }
+      },
+      "x-go-package": "github.com/atymkiv/echo_frame_learning/blog/cmd/api/user/transport"
+    },
+    "createReq": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "x-go-name": "Message"
+        }
+      },
+      "x-go-package": "github.com/atymkiv/echo_frame_learning/blog/cmd/api/post/transport"
+    },
+    "credentials": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "x-go-name": "Email"
+        },
+        "password": {
+          "type": "string",
+          "x-go-name": "Password"
+        }
+      },
+      "x-go-package": "github.com/atymkiv/echo_frame_learning/blog/cmd/api/auth/transport"
+    }
+  },
+  "responses": {
+    "err": {
+      "description": "Error response"
+    },
+    "errMsg": {
+      "description": "Error response with message",
+      "headers": {
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "loginResp": {
+      "description": "Login response",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "expires": {
+            "type": "string",
+            "x-go-name": "Expires"
+          },
+          "refresh_token": {
+            "type": "string",
+            "x-go-name": "RefreshToken"
+          },
+          "token": {
+            "type": "string",
+            "x-go-name": "Token"
+          }
+        }
+      }
+    },
+    "ok": {
+      "description": "Success response"
+    },
+    "postResp": {
+      "description": "Post model response",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "CreatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "DeletedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ID": {
+            "type": "integer",
+            "format": "uint64"
+          },
+          "UpdatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "from": {
+            "type": "string",
+            "x-go-name": "From"
+          },
+          "message": {
+            "type": "string",
+            "x-go-name": "Message"
+          }
+        }
+      }
+    },
+    "postsResp": {
+      "description": "Posts feed model response",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "Posts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Post"
+            }
+          }
+        }
+      }
+    },
+    "userResp": {
+      "description": "User model response",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "CreatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "DeletedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ID": {
+            "type": "integer",
+            "format": "uint64"
+          },
+          "UpdatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "email": {
+            "type": "string",
+            "x-go-name": "Email"
+          },
+          "password": {
+            "type": "string",
+            "x-go-name": "Password"
+          },
+          "token": {
+            "type": "string",
+            "x-go-name": "Token"
+          }
+        }
+      }
+    }
+  }
+}

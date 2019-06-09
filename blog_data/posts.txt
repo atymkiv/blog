@@ -1,0 +1,2 @@
+{"id":"\u0000","from":"atyma@l.co","body":"hello"}
+{"id":"\u0000","from":"atyma@l.co","body":"hell"}

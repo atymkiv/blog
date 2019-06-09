@@ -1,0 +1,14 @@
+{
+  "redis": {
+    "host": "redis:6379",
+    "password": "",
+    "db": 0
+  },
+  "nats": {
+    "qos": "message",
+    "host": "nats:4222"
+  },
+  "grpc": {
+    "host": ":10001"
+  }
+}

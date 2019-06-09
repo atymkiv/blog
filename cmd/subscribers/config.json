@@ -1,0 +1,7 @@
+
+{
+"nats": {
+  "qos": "message",
+  "host": "nats:4222"
+  }
+}
